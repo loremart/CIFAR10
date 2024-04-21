@@ -35,6 +35,7 @@ history = model.fit(train_images, train_labels, epochs=10,
 # Evaluate the model
 test_loss, test_acc = model.evaluate(test_images, test_labels)
 print("Test Accuracy:", test_acc)
+model.save('cifar10_model.h5')
 
 # Plot training and validation accuracy
 plt.plot(history.history['accuracy'], label='accuracy')
