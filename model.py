@@ -39,8 +39,8 @@ print("Test Accuracy:", test_acc)
 model.save('cifar10_model.h5')
 
 # Plot training and validation accuracy
-plt.plot(history.history['accuracy'], label='accuracy')
-plt.plot(history.history['val_accuracy'], label = 'val_accuracy')
+plt.plot(history.history['accuracy'], label='training accuracy')
+plt.plot(history.history['val_accuracy'], label = 'test accuracy')
 plt.xlabel('Epoch')
 plt.ylabel('Accuracy')
 plt.ylim([0, 1])
