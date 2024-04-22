@@ -4,6 +4,7 @@ from PIL import Image, ImageTk
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras import models
+#verion 1.2
 
 # Load the trained CNN model for CIFAR-10
 model = models.load_model('cifar10_model.h5')
