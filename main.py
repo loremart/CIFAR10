@@ -8,6 +8,7 @@ from tensorflow.keras import models
 
 # Load the trained CNN model for CIFAR-10
 model = models.load_model('cifar10_model.h5')
+model.compile_metrics = model.metrics
 
 # Define the classes for CIFAR-10 dataset
 class_names = ['airplane', 'automobile', 'bird', 'cat', 'deer',
