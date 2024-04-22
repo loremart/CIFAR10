@@ -5,11 +5,12 @@ This repository contains two Python scripts for image classification using the C
 CIFAR-10 Model Training Script: This script loads the CIFAR-10 dataset, preprocesses the images, builds, compiles, trains, and evaluates a Convolutional Neural Network (CNN) model for image classification. It uses TensorFlow and Keras for model development.
 Image Classification GUI Script: This script allows users to load an image, preprocess it, and perform predictions using the trained CIFAR-10 CNN model. The GUI is created using Tkinter, a Python library for building user interfaces.
 
-Files
-model.py: Python script for training the CNN model on the CIFAR-10 dataset.
-main.py: Python script for building a GUI to perform image classification using the trained model.
-cifar10_model.h5: Pre-trained CNN model saved in Hierarchical Data Format (H5) after training on the CIFAR-10 dataset.
-Usage
+Files:
+- model.py: Python script for training the CNN model on the CIFAR-10 dataset.
+- main.py: Python script for building a GUI to perform image classification using the trained model.
+- cifar10_model.h5: Pre-trained CNN model saved in Hierarchical Data Format (H5) after training on the CIFAR-10 dataset.
+
+Usage:
 CIFAR-10 Model Training Script
 Run model.py to train the CNN model on the CIFAR-10 dataset.
 After training, the script will display the training and validation accuracy plots, and print the test accuracy of the model.
