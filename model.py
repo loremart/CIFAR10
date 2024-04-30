@@ -1,5 +1,7 @@
 import tensorflow as tf
 from tensorflow.keras import datasets, layers, models
+
+
 import matplotlib.pyplot as plt
 #verison 1.2
 
@@ -31,8 +33,7 @@ model.compile(optimizer='adam',
               metrics=['accuracy'])
 
 # Train the model
-history = model.fit(train_images, train_labels, epochs=10,
-                    validation_data=(test_images, test_labels))
+history = model.fit(train_images, train_labels, epochs=15, validation_data=(test_images, test_labels))
 
 # Evaluate the model
 test_loss, test_acc = model.evaluate(test_images, test_labels)
